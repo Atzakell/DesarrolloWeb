@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>formularios</title>
+</head>
+
+<body>
+    <br>
+    <!--formulario basico-->
+    <form action="/enviar-respuesta">
+        <input type="text">
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <!--formulario con texto marcador-->
+    <form action="/formulario">
+        <input type="text" placeholder="Ingresa tu nombre">
+        <button type="submit">Enviar</button>
+    </form>
+    <!--formulario con campo obligatorio-->
+    <br>
+    <form action="/formulario"></form>>
+    <input type="text" placeholder="Correo" required>
+    <button type="submit">Enviar</button>
+    </form>
+    <!--formulario con boton radio-->
+    <br>
+    <form action="/formulario">
+        <label for="interior"><input id="interior" type="radio" name="interior-exterior-centro">Interior</label>
+        <label for="exterior"><input id="exterior" type="radio" name="interior-exterior-centro">Exterior</label>
+        <label for="centro"><input id="centro" type="radio" name="interior-exterior-centro">Centro</label>
+    </form>
+    <br>
+    <!--formulario con casillas de verificacion-->
+    <form action="/formulario"></form>
+    <label for="ira"><input id="ira" type="checkbox" name="pecado capital">Ira</label>
+    <label for="lujuria"><input id="lujuria" type="checkbox" name="pecado capital">Lujuria</label>
+    <label for="gula"><input id="gula" type="checkbox" name="pecado capital">Gula</label>
+    <!--atributo checked-->
+    <label for="envidia"><input id="endivia" type="checkbox" name="pecado capital" checked>Envidia</label>
+    <!--atributo value-->
+    <!--quiere decir que del name pecados capitales el value es codicia, eslo que recibirá el servidor en caso marques la casilla-->
+    <label for="codicia"><input id="codicia" type="checkbox" name="pecado capital" value="energico"></label>
+    <hr>
+</body>
+
+</html>
